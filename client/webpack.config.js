@@ -24,7 +24,7 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'sw.js',
+        swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
         name: 'Text Editor Application',
@@ -40,12 +40,6 @@ module.exports = () => {
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
-          {
-            src: path.resolve('src/images/logo.png'),
-            size: '1024x1024',
-            destination: path.join('assets', 'icons'),
-            purpose: 'maskable'
-          }
         ],
       }),
     ],
