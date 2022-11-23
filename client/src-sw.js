@@ -29,7 +29,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 // TODO: Implement asset caching
 registerRoute(
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
-  new StaleWhileRevalidate({ //This was not spelled correctly causing an error and had to be imported through workbox-strategies 
+  new StaleWhileRevalidate({
     cacheName: 'asset-cache',
     plugins: [
       new CacheableResponsePlugin({
