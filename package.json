@@ -27,6 +27,9 @@
     "webpack-cli": "^5.0.0",
     "webpack-pwa-manifest": "^4.3.0"
   },
+  "engines": {
+    "node": "17.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coding-boot-camp/cautious-meme.git"
